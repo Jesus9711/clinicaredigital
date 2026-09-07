@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CLINICARE Digital: plataforma web de salud digital para agenda, teleconsulta, seguimiento y educación en salud.">
+<title>CLINICARE Digital | Salud conectada</title>
+<style>
+:root{--primary:#126e82;--secondary:#2aa198;--dark:#12303a;--bg:#f4f9fa;--card:#fff;--muted:#61747b;--line:#dce9ec;--danger:#c94b4b;--warning:#d89425;--success:#2f8f63}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--dark);line-height:1.55}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{max-width:1180px;margin:auto;padding:15px 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;font-size:1.25rem;color:var(--primary)} .logo span{color:var(--secondary)}
+nav a{color:var(--dark);text-decoration:none;margin-left:22px;font-weight:600;font-size:.92rem}
+.btn{display:inline-block;background:var(--primary);color:white!important;padding:11px 17px;border-radius:12px;text-decoration:none;border:0;cursor:pointer;font-weight:700}
+.btn.alt{background:white;color:var(--primary)!important;border:1px solid var(--primary)}
+.hero{max-width:1180px;margin:auto;padding:72px 24px 45px;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center}
+.eyebrow{display:inline-block;background:#dff3f2;color:var(--primary);padding:7px 11px;border-radius:999px;font-weight:800;font-size:.8rem}
+h1{font-size:clamp(2.3rem,5vw,4.2rem);line-height:1.05;margin:18px 0} h2{font-size:2rem;margin:0 0 12px} h3{margin-top:0}
+.lead{font-size:1.12rem;color:var(--muted);max-width:670px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.hero-card{background:linear-gradient(145deg,#0e6679,#2aa198);color:#fff;border-radius:28px;padding:26px;box-shadow:0 20px 50px #126e8230}
+.metric{background:#ffffff18;border:1px solid #ffffff35;border-radius:16px;padding:15px;margin:12px 0}
+.metric strong{display:block;font-size:1.35rem}.metric small{opacity:.85}
+section{max-width:1180px;margin:auto;padding:55px 24px}.section-head{max-width:720px;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:23px;box-shadow:0 8px 28px #12303a0b}
+.icon{width:42px;height:42px;border-radius:12px;background:#e3f4f3;display:grid;place-items:center;color:var(--primary);font-size:1.25rem;margin-bottom:15px}
+.muted{color:var(--muted)}
+.dashboard{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:0 12px 35px #12303a12}
+.topdash{display:flex;justify-content:space-between;gap:10px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px}
+.status{font-size:.78rem;font-weight:800;padding:6px 9px;border-radius:999px;background:#e2f5eb;color:var(--success)}
+.patient{display:flex;justify-content:space-between;align-items:center;padding:15px;border:1px solid var(--line);border-radius:14px;margin:10px 0}
+.alert{border-left:4px solid var(--warning);padding-left:12px}.danger{border-left-color:var(--danger)}
+.pill{display:inline-block;padding:5px 9px;border-radius:9px;background:#eef5f6;font-size:.76rem;font-weight:700}
+form{display:grid;gap:12px}input,select,textarea{width:100%;padding:12px 13px;border:1px solid var(--line);border-radius:11px;font:inherit}textarea{min-height:100px}
+footer{background:#102e37;color:#dce9ec;margin-top:35px}footer .inner{max-width:1180px;margin:auto;padding:35px 24px;display:flex;justify-content:space-between;gap:25px}
+small{color:inherit}.modal{display:none;position:fixed;inset:0;background:#06191db8;z-index:30;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-box{background:white;border-radius:20px;padding:25px;max-width:500px;width:100%}.close{float:right;border:0;background:none;font-size:1.4rem;cursor:pointer}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:45px}.grid,.grid2{grid-template-columns:1fr}nav{padding:13px 16px}nav .links{display:none}footer .inner{flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div class="logo">CLINICARE <span>Digital</span></div>
+<div class="links">
+<a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#paciente">Paciente</a><a href="#profesional">Profesional</a><a href="#seguridad">Seguridad</a>
+</div>
+<a class="btn" href="#contacto">Agendar</a>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+<div>
+<span class="eyebrow">SALUD DIGITAL • TELEMEDICINA • SEGUIMIENTO</span>
+<h1>Tu salud, conectada con atención médica.</h1>
+<p class="lead">CLINICARE Digital integra agenda, teleconsulta, seguimiento clínico y educación en una experiencia web centrada en la persona.</p>
+<div class="actions"><a class="btn" href="#paciente">Entrar como paciente</a><a class="btn alt" href="#profesional">Portal profesional</a></div>
+</div>
+<div class="hero-card">
+<h3>Resumen de atención</h3>
+<div class="metric"><strong>Próxima cita</strong><small>Consulta de seguimiento · Hoy, 18:00 h</small></div>
+<div class="metric"><strong>Seguimiento activo</strong><small>Presión arterial · 14 días</small></div>
+<div class="metric"><strong>Estado</strong><small>● Datos sincronizados correctamente</small></div>
+</div>
+</section>
+
+<section id="servicios">
+<div class="section-head"><span class="eyebrow">PLATAFORMA</span><h2>Una experiencia digital de principio a fin</h2><p class="muted">El prototipo organiza las funciones alrededor del proceso de atención, evitando que la tecnología sea un fin en sí mismo.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">📅</div><h3>Agenda digital</h3><p class="muted">Solicitud, confirmación y consulta de citas presenciales o remotas.</p></div>
+<div class="card"><div class="icon">🎥</div><h3>Teleconsulta</h3><p class="muted">Atención síncrona con acceso al contexto clínico y registro de la intervención.</p></div>
+<div class="card"><div class="icon">📈</div><h3>Seguimiento</h3><p class="muted">Visualización de tendencias y datos de salud para apoyar el seguimiento longitudinal.</p></div>
+<div class="card"><div class="icon">🔔</div><h3>Alertas</h3><p class="muted">Identificación de datos que requieren revisión profesional, sin sustituir el juicio clínico.</p></div>
+<div class="card"><div class="icon">📚</div><h3>Educación</h3><p class="muted">Contenido de salud orientado a favorecer participación y autocuidado informado.</p></div>
+<div class="card"><div class="icon">🔐</div><h3>Seguridad</h3><p class="muted">Acceso por roles, comunicaciones protegidas y trazabilidad como principios del prototipo.</p></div>
+</div>
+</section>
+
+<section id="paciente">
+<div class="grid2">
+<div>
+<span class="eyebrow">PORTAL DEL PACIENTE</span><h2>Mi salud en un solo lugar</h2>
+<p class="muted">El paciente puede consultar citas, acceder a teleconsulta, revisar tendencias y recibir orientación educativa.</p>
+<div class="card"><h3>Funciones principales</h3><p>✓ Mis citas y recordatorios</p><p>✓ Teleconsulta</p><p>✓ Mi salud y tendencias</p><p>✓ Educación para la salud</p><p>✓ Notificaciones</p><button class="btn" onclick="openModal('demo')">Simular acceso</button></div>
+</div>
+<div class="dashboard">
+<div class="topdash"><strong>Mi tablero de salud</strong><span class="status">SINCRONIZADO</span></div>
+<div class="patient"><div><strong>Presión arterial</strong><br><span class="muted">Promedio últimos 7 días</span></div><strong>128/82</strong></div>
+<div class="patient"><div><strong>Próxima cita</strong><br><span class="muted">Seguimiento médico</span></div><span class="pill">Hoy 18:00</span></div>
+<div class="patient alert"><div><strong>Recordatorio</strong><br><span class="muted">Registrar datos de seguimiento</span></div><span class="pill">Pendiente</span></div>
+</div>
+</div>
+</section>
+
+<section id="profesional">
+<div class="grid2">
+<div class="dashboard">
+<div class="topdash"><strong>Panel clínico</strong><span class="status">CLOUD ACTIVE</span></div>
+<div class="patient danger"><div><strong>Paciente #84920</strong><br><span class="muted">Seguimiento de enfermedad crónica</span></div><span class="pill">Revisar</span></div>
+<div class="patient"><div><strong>Datos recientes</strong><br><span class="muted">Presión arterial · 14 registros</span></div><strong>Ver</strong></div>
+<div class="patient"><div><strong>Plan de seguimiento</strong><br><span class="muted">Próxima evaluación</span></div><strong>7 días</strong></div>
+</div>
+<div>
+<span class="eyebrow">PORTAL PROFESIONAL</span><h2>Información para apoyar decisiones clínicas</h2>
+<p class="muted">El profesional visualiza información longitudinal, alertas y seguimiento de pacientes en una interfaz orientada a la priorización.</p>
+<div class="card"><h3>Interoperabilidad</h3><p class="muted">El diseño contempla una futura integración mediante estándares de intercambio de información clínica, como HL7 FHIR, evitando silos de datos.</p></div>
+</div>
+</div>
+</section>
+
+<section id="seguridad">
+<div class="section-head"><span class="eyebrow">CONFIANZA DIGITAL</span><h2>Seguridad, privacidad e interoperabilidad</h2><p class="muted">La propuesta considera la protección de la información como parte del diseño clínico y tecnológico, no como una función añadida al final.</p></div>
+<div class="grid">
+<div class="card"><h3>Confidencialidad</h3><p class="muted">Autenticación y autorización según el rol del usuario.</p></div>
+<div class="card"><h3>Integridad</h3><p class="muted">Protección de los datos durante su transmisión y registro.</p></div>
+<div class="card"><h3>Trazabilidad</h3><p class="muted">Registro de actividades relevantes para facilitar auditoría y control.</p></div>
+</div>
+</section>
+
+<section id="contacto">
+<div class="grid2">
+<div><span class="eyebrow">DEMO ACADÉMICA</span><h2>Solicita una demostración</h2><p class="muted">Formulario demostrativo para el prototipo de la actividad. No recopila datos clínicos reales.</p></div>
+<div class="card"><form onsubmit="event.preventDefault(); openModal('sent')"><input required placeholder="Nombre"><input type="email" required placeholder="Correo electrónico"><select><option>Consulta general</option><option>Teleconsulta</option><option>Seguimiento</option></select><textarea placeholder="Mensaje"></textarea><button class="btn">Enviar solicitud</button></form></div>
+</div>
+</section>
+</main>
+
+<footer><div class="inner"><div><strong>CLINICARE Digital</strong><br><small>Prototipo académico de salud digital</small></div><div><small>Diseño orientado a atención centrada en la persona · 2026</small></div></div></footer>
+
+<div class="modal" id="modal"><div class="modal-box"><button class="close" onclick="closeModal()">×</button><h3 id="modalTitle">Demo</h3><p id="modalText">Esta función forma parte del prototipo académico y no procesa información clínica real.</p><button class="btn" onclick="closeModal()">Cerrar</button></div></div>
+<script>
+function openModal(type){document.getElementById('modal').classList.add('open');if(type==='sent'){document.getElementById('modalTitle').textContent='Solicitud enviada';document.getElementById('modalText').textContent='Gracias. En una versión productiva esta solicitud se integraría con el sistema de agenda.';}else{document.getElementById('modalTitle').textContent='Acceso de demostración';document.getElementById('modalText').textContent='Acceso simulado: el prototipo no utiliza cuentas ni datos clínicos reales.';}}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+</script>
+</body>
+</html>
